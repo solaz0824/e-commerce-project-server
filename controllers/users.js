@@ -16,7 +16,7 @@ const register = async (req,res) => {
         const newUser = {
         	email,
             password : hash,
-            admin: true,
+            admin: false,
             firstName,
             lastName
         }
