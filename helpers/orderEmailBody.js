@@ -1,16 +1,4 @@
 const styles = require('./orderEmailStyles')
-// const cart = [
-//     {
-//       img_link:'https://i5.walmartimages.com/asr/209bb8a0-30ab-46be-b38d-58c2feb93e4a_1.1a15fb5bcbecbadd4a45822a11bf6257.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF',
-//       name:'banana',
-//       price:375,
-//       quantity:3
-//     },{img_link:'https://www.comenaranjas.com/images/stories/virtuemart/product/kiwi-jumbo.jpg',
-//         name:'kiwi',
-//         price:840,
-//         quantity:2
-//     }
-//     ]
 
 module.exports = (name,_id, total, cart) => (
 	console.log(cart,'cart')

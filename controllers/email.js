@@ -9,7 +9,7 @@ const contact = (req, res) => {
         user: config.user,
         pass: config.pass,
     },
-      // find a way to import config file to hide credentials
+
   });
       const mailOptions = {
         from: req.body.email,
