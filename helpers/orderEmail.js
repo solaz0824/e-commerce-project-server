@@ -8,13 +8,13 @@ const orderEmail = (email, name, _id, res, total, cart) => {
     const transport = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: 'eunyoungk0824@gmail.com',
-            pass: 'gksduqls1!',
+            user: config.user,
+            pass: config.pass,
         },
     });
     const mailOptions = {
-        from: 'eunyoungk0824@gmail.com',
-        to: 'eunyoungk0824@gmail.com',
+        from: config.user,
+        to: email,
 	    subject: "New message from " + name,
 	    html: orderEmailBody(name, _id, total, cart)
     };

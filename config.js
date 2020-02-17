@@ -1,6 +1,6 @@
 const config = {
-    user: 'eunyoungk0824@gmail.com',
-    pass: 'gksduqls1!',
+    user: '',
+    pass: '',
     secret: 'secret'
 }
 module.exports = config
