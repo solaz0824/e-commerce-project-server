@@ -25,7 +25,6 @@ mongoose.connect(`mongodb://127.0.0.1/webpage`, ()=>{
 app.use('/payment',require('./routes/payment.js'))
 
 app.use('/orders', require('./routes/orders.js'))
-//use always the first part of the path
 app.use('/products', require('./routes/products.js'))
 app.use('/users', require('./routes/users.js'));
 app.use('/category', require('./routes/category.js'))

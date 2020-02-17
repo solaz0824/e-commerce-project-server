@@ -7,9 +7,7 @@ const orderEmail = require('../helpers/orderEmail.js')
 const create = async (req, res) => {
     let {userData, cart , total} = req.body
     try{
-        console.log(userData, 'userdata')
         const newOrder = await Orders.create({userData, cart, total})
-        console.log(newOrder, 'new order')
        orderEmail(userData.email, userData.name, newOrder._id, res, total, cart) 
      }
      catch(error) {

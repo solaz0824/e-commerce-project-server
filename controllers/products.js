@@ -65,7 +65,6 @@ const remove = async (req, res) => {
                     bestSeller: req.body.form.bestSeller,
                     onSale: req.body.form.onSale
                 }})
-      //  const products= await Products.find({})
             res.send({ok: true, message: 'product updated'})
     } 
     catch(error) {

@@ -11,7 +11,6 @@ const updateStock =(cart, res, email, name, total, _id) => {
             let setStock = await Products.update({_id: ele._id},
               {$set: {stock: updatedStock}})
         })
-        console.log('--------------->',cart, email, name, total, _id)
         res.send({ok:true, cart, email, name, total, _id})
     }
     catch(error) {

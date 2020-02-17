@@ -48,7 +48,6 @@ const verify_token = (req,res) => {
     try{
        const { token } = req.body;
        const decoded   = jwt.verify(token, config.secret);
-       console.log(decoded)
        res.send({ok: true, 
                 admin:decoded.admin, 
                 name: decoded.firstName, 

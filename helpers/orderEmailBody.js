@@ -1,7 +1,6 @@
 const styles = require('./orderEmailStyles')
 
 module.exports = (name,_id, total, cart) => (
-	console.log('from template ========================',name,_id, total, cart)
 	`<div  style=${styles.container}>
          <h1>Hello ${name}, thank you for your order!</h1>
          <h3>Your order number is ${_id}</h3>	

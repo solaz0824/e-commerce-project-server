@@ -20,7 +20,6 @@ const productsSchema = new mongoose.Schema({
     images: {
         type: Array,
         required: true,
-        //default: 'https://semantic-ui.com/images/wireframe/image.png'
     },
     bestSeller: {
         type: Boolean,
