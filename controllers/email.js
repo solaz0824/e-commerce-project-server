@@ -4,7 +4,7 @@ const config     = require('../config');
 const contact = (req, res) => {
 
   const transport = nodemailer.createTransport({
-    service: 'Gmail',
+    service: 'hotmail',
     auth: {
         user: config.user,
         pass: config.pass,

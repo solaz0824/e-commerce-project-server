@@ -16,7 +16,7 @@ const register = async (req,res) => {
         const newUser = {
         	email,
             password : hash,
-            admin: false,
+            admin: true,
             firstName,
             lastName
         }
@@ -32,7 +32,7 @@ const login = async (req,res) => {
 	if( !email || !password ) return res.send({ok: false, message:'all field are required'});
 	try{
     	const user = await User.findOne({ email });
-    	if( !user ) return res.send({ok: false, message:'plase provide a valid email'});
+    	if( !user ) return res.send({ok: false, message:'please provide a valid email'});
         const match = await bcrypt.compare(password, user.password);
         if(match) {
            const token = jwt.sign(user.toJSON(), config.secret ,{ expiresIn:100080 });
